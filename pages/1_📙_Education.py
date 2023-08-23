@@ -42,14 +42,14 @@ def education_page():
      st.markdown(sect2, unsafe_allow_html=True)
      st.write("")
     ## Alphabétisation
-     Alphabet_y = st.number_input("🏷️ Parmi les personnes âgées de 15 ans ou plus dans le ménage, combien savent lire et écrire ?" , 0, None, data.get('Alphabet_y'))
+     Alphabet_y = st.number_input("# ***🏷️ Parmi les personnes âgées de 15 ans ou plus dans le ménage, combien savent lire et écrire ?***" , 0, None, data.get('Alphabet_y'))
      st.write("")
     ## Niveau de scolarisation
-     Niveau_Scol_y = st.number_input("🏷️ Parmi les personnes âgées de 15 ans ou plus dans le ménage, combien ont pu complèté six années d'études ?" , 0, None, data.get('Niveau_Scol_y'))
+     Niveau_Scol_y = st.number_input("# ***🏷️ Parmi les personnes âgées de 15 ans ou plus dans le ménage, combien ont pu complèté six années d'études ?***" , 0, None, data.get('Niveau_Scol_y'))
      st.write("")
      if data.get('Age8_14') > 0 :
          ## Fréquentation scolaire
-         Freq_Scolaire_y = st.number_input("🏷️ Parmi les enfants de 8 à 14 ans dans le ménage, combien fréquentent une école ?" , 0, None, data.get('Freq_Scolaire_y'))
+         Freq_Scolaire_y = st.number_input("# ***🏷️ Parmi les enfants de 8 à 14 ans dans le ménage, combien fréquentent une école ?***" , 0, None, data.get('Freq_Scolaire_y'))
          st.write("")
         #
      else :
@@ -71,4 +71,3 @@ def education_page():
      
          
 education_page()   
-
