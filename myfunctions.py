@@ -19,9 +19,9 @@ def  Id_men(data) :
     sect1 = '<b style="font-family:serif; color:#6082B6; font-size:20px;">🏠 Adresse du ménage</b>'
     st.sidebar.markdown(sect1, unsafe_allow_html=True)
     st.sidebar.write("")
-    nom = st.sidebar.text_input("➡️ Chef du ménage ",data.get('nom'))
+    nom = st.sidebar.text_input("👨 Chef du ménage ",data.get('nom'))
     st.sidebar.write("")
-    contact = st.sidebar.text_input("➡️ Contact", data.get('contact'))
+    contact = st.sidebar.text_input("📞 Contact", data.get('contact'))
     st.sidebar.write("")
     data.update({'nom': nom, 'contact':contact})
 
@@ -178,10 +178,11 @@ def set_custom_style():
         }
         .stMarkdown {
             background-color: #f0f0f0; 
-            font-family: 'serif'; 
+            font-family: 'serif';
         }
         p {
             font-weight: bold;
+            
         }
         .footer {
             position: fixed;
