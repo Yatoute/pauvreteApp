@@ -41,22 +41,22 @@ def aliment_page():
      st.markdown(sect4, unsafe_allow_html=True)
      st.write("")
      ## FIESE1
-     FIESE1_1 = st.selectbox("➡️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez été inquiet(s) de ne pas avoir suffisamment de nourriture par manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE1_1')))
+     FIESE1_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez été inquiet(s) de ne pas avoir suffisamment de nourriture par manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE1_1')))
      st.write("")
      ## FIESE2
-     FIESE2_1 = st.selectbox("➡️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage n'avez pas pu manger une nourriture saine et nutritive par manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE2_1')))
+     FIESE2_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage n'avez pas pu manger une nourriture saine et nutritive par manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE2_1')))
      st.write("")
      ## FIESE3
-     FIESE3_1 = st.selectbox("➡️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez mangé une nourriture peu variée par manque d’argent ou d’autres ressources ?" , ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE3_1')))
+     FIESE3_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez mangé une nourriture peu variée par manque d’argent ou d’autres ressources ?" , ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE3_1')))
      st.write("")
      ## FIESE4
-     FIESE4_1 = st.selectbox("➡️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez dû sauter un repas parce qu’il n’y avait pas assez d’argent ou d’autres ressources pour se procurer à manger ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE4_1')))
+     FIESE4_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez dû sauter un repas parce qu’il n’y avait pas assez d’argent ou d’autres ressources pour se procurer à manger ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE4_1')))
      st.write("")
      ## FIESE5
-     FIESE5_1 = st.selectbox("➡️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez mangé moins que ce que vous pensiez que vous auriez dû manger à cause d’un manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE5_1')))
+     FIESE5_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, vous ou d'autres membres de votre ménage avez mangé moins que ce que vous pensiez que vous auriez dû manger à cause d’un manque d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE5_1')))
      st.write("")
      ## FIESE6
-     FIESE6_1 = st.selectbox("➡️ Au cours des 12 derniers mois, votre ménage n'avait de nourriture parce qu’il n’y avait plus assez d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE6_1')))
+     FIESE6_1 = st.selectbox("🏷️ Au cours des 12 derniers mois, votre ménage n'avait de nourriture parce qu’il n’y avait plus assez d’argent ou d’autres ressources ?", ["NON", "OUI", ''], ["NON", "OUI", ''].index(data.get('FIESE6_1')))
      st.write("")
     # Enregistrer les données dans les cookies ou la session
      st.session_state.saved_data.update(init_session_aliment(FIESE1_1, FIESE2_1, FIESE3_1, FIESE4_1, FIESE5_1, FIESE6_1))
