@@ -61,7 +61,7 @@ def Statut_men(data, _model_gb) :
             st.sidebar.success(f"Dans la section Santé, vous avez renseigné {data.get('Handicap_y')} personnes souffrant d'un handicap mental ou physique . Or le ménage ne compte que {data.get('Taill_men')} personnes")
         else :
             # Education ---------------------------------------------------------
-            if data.get('Age8_14') != 0 :
+            if data.get('Age15Plus') != 0 :
                 Alphabet_y = data.get('Alphabet_y')/data.get('Age15Plus')
                 Niveau_Scol_y = data.get('Niveau_Scol_y')/data.get('Age15Plus')
             else :
