@@ -47,13 +47,11 @@ def education_page():
     ## Niveau de scolarisation
      Niveau_Scol_y = st.number_input("# ***🏷️ Parmi les personnes âgées de 15 ans ou plus dans le ménage, combien ont pu complèté six années d'études ?***" , 0, None, data.get('Niveau_Scol_y'))
      st.write("")
-     if data.get('Age8_14') > 0 :
-         ## Fréquentation scolaire
-         Freq_Scolaire_y = st.number_input("# ***🏷️ Parmi les enfants de 8 à 14 ans dans le ménage, combien fréquentent une école ?***" , 0, None, data.get('Freq_Scolaire_y'))
-         st.write("")
-        #
-     else :
-         Freq_Scolaire_y = 0
+     ## Fréquentation scolaire
+     Freq_Scolaire_y = st.number_input("# ***🏷️ Parmi les enfants de 8 à 14 ans dans le ménage, combien fréquentent une école ?***" , 0, None, data.get('Freq_Scolaire_y'))
+     st.write("")
+    #
+     
     # Enrégistré les données
     # Enregistrer les données dans les cookies ou la session
      st.session_state.saved_data.update(init_session_educ(Alphabet_y,Niveau_Scol_y,Freq_Scolaire_y))
