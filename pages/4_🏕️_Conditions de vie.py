@@ -40,25 +40,25 @@ def vie_page():
      st.markdown(sect5, unsafe_allow_html=True)
      st.write("")
      ## Accès à l'eau potable
-     NoEauPotable_1 = st.selectbox("➡️ Le ménage a t-il accès à une eau potable buvable ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('NoEauPotable_1')))
+     NoEauPotable_1 = st.selectbox("🏷️ Le ménage a t-il accès à une eau potable buvable ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('NoEauPotable_1')))
      st.write("")
      ## Accès à l'électricité
-     Electricite_1 = st.selectbox("➡️ Le ménage a t-il accès à l'électricité ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Electricite_1')))
+     Electricite_1 = st.selectbox("🏷️ Le ménage a t-il accès à l'électricité ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Electricite_1')))
      st.write("")
      ## Utilisation du combustible pour cuisson
-     Combustible_1 = st.selectbox("➡️ Le ménage dispose t-il un combustible pour cuisson approprié(gaz, électricité, pétrole ou huile) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Combustible_1')))
+     Combustible_1 = st.selectbox("🏷️ Le ménage dispose t-il un combustible pour cuisson approprié(gaz, électricité, pétrole ou huile) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Combustible_1')))
      st.write("")
      ## Sanitaire
-     Sanitaire_1 =  st.selectbox("➡️ le ménage dispose t-il des toilettes avec chasse d’eau et des latrines améliorées ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Sanitaire_1')))
+     Sanitaire_1 =  st.selectbox("🏷️ le ménage dispose t-il des toilettes avec chasse d’eau et des latrines améliorées ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Sanitaire_1')))
      st.write("")
      ## Materiaux du toit
-     Materio_toit_1 = st.selectbox("➡️ Le principal matériel du toi du ménage est-il appropiré (tôle, tuile ou dalle en ciment ) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Materio_toit_1')))
+     Materio_toit_1 = st.selectbox("🏷️ Le principal matériel du toi du ménage est-il appropiré (tôle, tuile ou dalle en ciment ) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Materio_toit_1')))
      st.write("")
      ## Revêtement du sol
-     Revet_sol_1 = st.selectbox("➡️ le sol du logement est-il approprié (fait du ciment ou carrelage) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Revet_sol_1')))
+     Revet_sol_1 = st.selectbox("🏷️ le sol du logement est-il approprié (fait du ciment ou carrelage) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('Revet_sol_1')))
      st.write("")
      ## Matériaux de construction des murs extérieurs : les matériaux de constructions des murs extérieurs sont 
-     MursExterieur_1 = st.selectbox("➡️ les matériaux de constructions des murs extérieurs sont-ils appropriés (en ciment, béton, pierres, briques cuites, bac alu, vitres ou banco amélioré) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('MursExterieur_1')))
+     MursExterieur_1 = st.selectbox("🏷️ les matériaux de constructions des murs extérieurs sont-ils appropriés (en ciment, béton, pierres, briques cuites, bac alu, vitres ou banco amélioré) ?", ["OUI", "NON", ''], ["OUI", "NON", ''].index(data.get('MursExterieur_1')))
      st.write("")
     # Enregistrer les données dans les cookies ou la session
      st.session_state.saved_data.update(init_session_vie(NoEauPotable_1, Electricite_1, Combustible_1, Sanitaire_1, Materio_toit_1, Revet_sol_1, MursExterieur_1))
