@@ -11,8 +11,6 @@ st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layo
 # 📦 🔄 🚀 💡 🖲️
 
 
-
-
 # Page d'accueil
 def welcome_page(): 
     
@@ -38,19 +36,19 @@ def welcome_page():
     # Identifiants du ménage
  
     st.write("")
-    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:30px;">📦 Identifiant du ménage</b>'
+    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:30px;">🏠 Identifiant du ménage</b>'
     st.markdown(sect1, unsafe_allow_html=True)
     st.write("")
     st.write("")
-    nom = st.text_input("➡️ Nom et prénom du chef de ménage",data.get('nom'))
+    nom = st.text_input("👨 Nom et prénom du chef de ménage",data.get('nom'))
     st.write("")
-    contact = st.text_input("➡️ Contact du ménage", data.get('contact'))
+    contact = st.text_input("📞 Contact du ménage", data.get('contact'))
     st.write("")
-    Taill_men = st.number_input("➡️ Le ménage compte combien de personnes ?", 0,100, data.get('Taill_men'))
+    Taill_men = st.number_input("🏷️ Le ménage compte combien de personnes ?", 0,100, data.get('Taill_men'))
     st.write("")
-    Age15Plus = st.number_input("➡️ Combien sont âgés de 15 ans ou plus ?" , 0, None, data.get('Age15Plus'))
+    Age15Plus = st.number_input("🏷️ Combien sont âgés de 15 ans ou plus ?" , 0, None, data.get('Age15Plus'))
     st.write("")
-    Age8_14 = st.number_input("➡️ Combien sont âgés de 8 à 14 ans ?" , 0, None, data.get('Age8_14'))
+    Age8_14 = st.number_input("🏷️ Combien sont âgés de 8 à 14 ans ?" , 0, None, data.get('Age8_14'))
     st.write("")
     # Enregistrer les données dans les cookies ou la session
     st.session_state.saved_data.update(init_session_men(nom, contact, Taill_men, Age15Plus, Age8_14))
