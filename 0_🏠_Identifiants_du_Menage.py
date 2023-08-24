@@ -11,9 +11,9 @@ from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, 
 
 
 # Page d'accueil
-def welcome_page(save_data):
+def welcome_page(saved_data):
     # Définir le titre et la largeur de la page en mode large
-    if (save_data not in st.session_state) :
+    if saved_data not in st.session_state :
         # Afficher la barre latérale pour chaque nouvelle session
         st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
         st.session_state.saved_data = init_session_men('', '', 0,0,0)
@@ -71,4 +71,4 @@ def welcome_page(save_data):
 
         
 if __name__=='__main__':
-    welcome_page('save_data')
+    welcome_page('saved_data')
