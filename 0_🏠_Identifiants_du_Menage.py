@@ -61,12 +61,9 @@ def welcome_page(saved_data):
     result =""
     if st.sidebar.button("🖲️ Statut du ménage") :
         Statut_men(data, model_gb)
-        
     Id_men(data)   
     
-    st.markdown('<div class="footer"><button>Evaluation de la vulnérabilité des ménages</button></div>', unsafe_allow_html=True)
-
-
+    st.markdown('<div class="footer"><button>🏠 Identifiant du ménage</button></div>', unsafe_allow_html=True)
         
 if __name__=='__main__':
     welcome_page('saved_data')
