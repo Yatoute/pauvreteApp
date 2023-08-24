@@ -6,7 +6,7 @@ import sklearn
 from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, load_gb
 
 # Définir le titre et la largeur de la page en mode large
-st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered")
+st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
 
 # 📦 🔄 🚀 💡 🖲️
 
