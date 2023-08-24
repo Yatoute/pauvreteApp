@@ -5,14 +5,15 @@ import pickle
 import sklearn
 from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, load_gb
 
-# Définir le titre et la largeur de la page en mode large
-st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
+
 
 # 📦 🔄 🚀 💡 🖲️
 
 
 # Page d'accueil
 def welcome_page(): 
+    # Définir le titre et la largeur de la page en mode large
+    st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
     
     # Chargement du modèle
     model_gb = load_gb("XGBoost.pkl")
