@@ -65,6 +65,7 @@ def welcome_page(saved_data):
         
     Id_men(data)   
     if st.button("🖲️ Next section") :
+        st.session_state.sidebar = "expanded"
         st.sidebar.success("Bien enrégistrée")
        
         
