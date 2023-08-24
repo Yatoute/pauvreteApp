@@ -14,18 +14,10 @@ from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, 
 def welcome_page(save_data):
     # Définir le titre et la largeur de la page en mode large
     if save_data not in st.session_state :
-        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded",menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    })
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
         st.session_state.saved_data = init_session_men('', '', 0,0,0)
     else :
-        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="auto",menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    })
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="auto")
     
     # Chargement du modèle
     model_gb = load_gb("XGBoost.pkl")
