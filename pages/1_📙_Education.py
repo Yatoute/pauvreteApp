@@ -65,7 +65,7 @@ def education_page():
     
      Id_men(data)
      
-     st.markdown('<div class="footer"><button>Evaluation de la vulnérabilité des ménages</button></div>', unsafe_allow_html=True)
+     st.markdown('<div class="footer"><button>📙 Education du ménage</button></div>', unsafe_allow_html=True)
      
          
 education_page()   
