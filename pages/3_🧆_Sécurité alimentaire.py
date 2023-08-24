@@ -68,6 +68,6 @@ def aliment_page():
          Statut_men(data, model_gb)
 
      Id_men(data)           
-     st.markdown('<div class="footer"><button>Evaluation de la vulnérabilité des ménages</button></div>', unsafe_allow_html=True)
+     st.markdown('<div class="footer"><button>🧆 Sécurité alimentaire</button></div>', unsafe_allow_html=True)
          
 aliment_page()   
