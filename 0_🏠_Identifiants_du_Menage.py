@@ -11,9 +11,13 @@ from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, 
 
 
 # Page d'accueil
-def welcome_page(): 
+def welcome_page(i): 
     # Définir le titre et la largeur de la page en mode large
-    st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
+    if i == 0 :
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="auto")
+        i = 1
+    else :
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
     
     # Chargement du modèle
     model_gb = load_gb("XGBoost.pkl")
@@ -66,4 +70,5 @@ def welcome_page():
 
         
 if __name__=='__main__':
-        welcome_page()
+        i = 0
+        welcome_page(i)
