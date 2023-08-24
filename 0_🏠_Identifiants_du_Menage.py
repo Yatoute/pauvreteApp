@@ -65,8 +65,8 @@ def welcome_page(saved_data):
         
     Id_men(data)   
     if st.button("🖲️ Next section") :
-        st.session_state.sidebar = "expanded"
-        st.experimental_rerun()
+        st.sidebar.succes("Bien enrégistrée")
+       
         
     st.markdown('<div class="footer"><button>Evaluation de la vulnérabilité des ménages</button></div>', unsafe_allow_html=True)
 
