@@ -12,15 +12,14 @@ from myfunctions import init_session_men, set_custom_style, Id_men, Statut_men, 
 
 # Page d'accueil
 def welcome_page(saved_data):
-    # Définir le titre et la largeur de la page en mode large
+    # Configuration de la page
     if saved_data not in st.session_state :
         # Afficher la barre latérale pour chaque nouvelle session
         st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
         st.session_state.saved_data = init_session_men('', '', 0,0,0)
-        st.session_state.sidebar = "auto"
     else : 
-        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state =st.session_state.sidebar)
-        st.session_state.sidebar = "auto"
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="auto")
+    
         
     # Chargement du modèle
     model_gb = load_gb("XGBoost.pkl")
@@ -64,13 +63,7 @@ def welcome_page(saved_data):
         Statut_men(data, model_gb)
         
     Id_men(data)   
-    if st.button("🖲️ Save") :
-        st.session_state.sidebar = "expanded"
-        st.sidebar.success("Bien enrégistrée")
-        st.experimental_rerun()
-        
-       
-        
+    
     st.markdown('<div class="footer"><button>Evaluation de la vulnérabilité des ménages</button></div>', unsafe_allow_html=True)
 
 
