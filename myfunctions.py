@@ -16,7 +16,7 @@ def load_gb(urls) :
 @st.cache_data(experimental_allow_widgets=True)
 def  Id_men(data) : 
     # Identifiant du ménage       
-    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:20px;">🏠 Adresse du ménage</b>'
+    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:20px;">🏡 Adresse du ménage</b>'
     st.sidebar.markdown(sect1, unsafe_allow_html=True)
     st.sidebar.write("")
     nom = st.sidebar.text_input("👨 Chef du ménage ",data.get('nom'))
