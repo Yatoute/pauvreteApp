@@ -15,10 +15,10 @@ def welcome_page(saved_data):
     # Configuration de la page
     if saved_data not in st.session_state :
         # Afficher la barre latérale pour chaque nouvelle session
-        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="expanded")
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏡', layout="centered", initial_sidebar_state ="expanded")
         st.session_state.saved_data = init_session_men('', '', 0,0,0)
     else : 
-        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏠', layout="centered", initial_sidebar_state ="auto")
+        st.set_page_config(page_title= "Identifiants du ménage", page_icon='🏡', layout="centered", initial_sidebar_state ="auto")
     
         
     # Chargement du modèle
@@ -39,7 +39,7 @@ def welcome_page(saved_data):
     # Identifiants du ménage
  
     st.write("")
-    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:30px;">🏠 Identifiants du ménage</b>'
+    sect1 = '<b style="font-family:serif; color:#6082B6; font-size:30px;">🏡 Identifiants du ménage</b>'
     st.markdown(sect1, unsafe_allow_html=True)
     st.write("")
     st.write("")
@@ -63,7 +63,7 @@ def welcome_page(saved_data):
         Statut_men(data, model_gb)
     Id_men(data)   
     
-    st.markdown('<div class="footer"><button>🏠 Identifiants du ménage</button></div>', unsafe_allow_html=True)
+    st.markdown('<div class="footer"><button>🏡 Identifiants du ménage</button></div>', unsafe_allow_html=True)
         
 if __name__=='__main__':
     welcome_page('saved_data')
