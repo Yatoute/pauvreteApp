@@ -1,3 +1,2 @@
-# pauvreteApp
-Outil d'évaluation de la vulnérabilité des ménages au Sénégal : 
-Cette plateforme utilise un modèle GradientBoostingClassifier pré-formé pour prédire le statut de vulnérabilité d'un ménage au Sénégal selon ses conditions de vie globales
+# Outil d'évaluation de la vulnérabilité des ménages au Sénégal
+La plateforme d'évaluation de la vulnérabilité des ménages au Sénégal a été proposée par trois étudiants de l'ENSAE Dakar (Yatoute MINTOAMA, Jean Pierre A. NDIAYE et Fadel SARR) dans le cadre du concours sur l'économie de la pauvreté, entre les Ecoles de Statistique africaines (ESA). Elle utilise un modèle GradientBoostingClassifier pré-formé pour prédire le statut de vulnérabilité d'un ménage au Sénégal selon ses conditions de vie globales. Cette plateforme pourra donc être utiliser pour évaluer de manière régulière l'impact des politiques de lutte contre de la pauvreté afin d'améliorer les conditions de vie globales des ménages.
