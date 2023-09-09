@@ -62,7 +62,7 @@ def welcome_page(saved_data):
     if st.sidebar.button("🖲️ Statut du ménage") :
         Statut_men(data, model_gb)
     text = """
-       <b style="font-family:algerian; text-align: center; background-color: #e3efef; color:#6082B6; font-size:35px;">OEVM</b>
+       <p style="font-family:algerian; text-align: center; background-color: #e3efef; color:#6082B6; font-size:35px;">OEVM</p>
        <div style="padding: 15px; border: 2px solid #333;"><p>L'outil d'évaluation de la vulnérabilité des ménages (OEVM) vise à évaluer de manière régulière l’impact des politiques de réductions mise en place au Sénégal. Cette application opère au moyen d’un formulaire au sein duquel sont recueillies certaines informations  spécifiques au ménage, minutieusement réparties en cinq sections, à savoir : « Identifiants du ménage », « Éducation », « Santé », « Sécurité alimentaire » et « Conditions de vie du ménage ». Ces informations peuvent être renseigné en plus ou moins 10 minutes. Après avoir renseigner toutes les sections, l’utilisateur clique sur le bouton « Statut du ménage » pour voCette application opère au moyen d’un formulaire au sein duquel sont recueillies certaines informations  spécifiques au ménage, minutieusement réparties en cinq sections, à savoir : « Identifiants du ménage », « Éducation », « Santé », « Sécurité alimentaire » et « Conditions de vie du ménage ». Ces informations peuvent être renseigné en plus ou moins 10 minutes. Après avoir renseigner toutes les sections, l’utilisateur clique sur le bouton « Statut du ménage » pour voir le statut de vulnérabilité de son ménage.</p></div>
        """
     st.sidebar.markdown(text, unsafe_allow_html=True)  
