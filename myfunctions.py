@@ -180,7 +180,8 @@ def set_custom_style():
             background-color: #f0f0f0; 
             font-family: 'serif';
         }
-        p {
+        p { 
+            text-align: justify;
             font-weight: bold;
             
         }
