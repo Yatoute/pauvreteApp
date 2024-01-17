@@ -64,4 +64,6 @@ jobs:
         with:
           app-name: 'PauvreteApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_47B8CCA4ED194840BB8D4A5C7FECCC98 }}
+          # publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_47B8CCA4ED194840BB8D4A5C7FECCC98 }}
+          credentials: ${{ secrets.AZURE_CREDENTIALS }}
+ 
